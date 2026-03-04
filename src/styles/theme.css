@@ -1,0 +1,273 @@
+/* ============================================================
+   GLOBAL THEME STYLING
+   Vehicle Service Portal Theme
+============================================================ */
+
+body {
+    background-color: #F4F7FC;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ============================================================
+   NAVBAR STYLING
+============================================================ */
+
+.navbar-theme {
+    background-color: #1E3A5F;
+    color: white;
+}
+
+/* ============================================================
+   SIDEBAR STYLING
+============================================================ */
+
+.sidebar-theme {
+    background-color: #16213E;
+    color: white;
+    min-height: 100vh;
+    width: 240px;
+}
+
+.sidebar-theme a {
+    color: #cfd8dc;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar-theme a:hover {
+    background-color: #4DA8DA;
+    color: white;
+}
+
+/* ============================================================
+   DASHBOARD CARD
+============================================================ */
+
+.dashboard-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ============================================================
+   BUTTON STYLING
+============================================================ */
+
+.btn-theme {
+    background-color: #FF7A00;
+    color: white;
+    border: none;
+}
+
+.btn-theme:hover {
+    background-color: #e96d00;
+}
+
+/* ============================================================
+   PAGE HEADER
+============================================================ */
+
+.page-title {
+    font-weight: bold;
+    color: #1E3A5F;
+    margin-bottom: 20px;
+}
+
+/* cards */
+.clickable-card {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.clickable-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   AUTH PAGE STYLING
+============================================================ */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+.auth-title {
+  text-align: center;
+  color: rgb(30, 58, 95);
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+
+.auth-input {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ============================================================
+   PREMIUM AUTH UI
+============================================================ */
+
+/* .auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(222, 225, 228, 0.487);
+}
+
+/* Glass Card */
+/* .auth-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: #1E3A5F;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: #cfd8dc;
+} */
+
+/* Animated Gradient Border */
+/* .auth-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 16px; */
+  /* background: linear-gradient(
+    270deg,
+    #1E3A5F,
+    #4DA8DA,
+    #FF7A00,
+    #1E3A5F
+  ); */
+  /* background-size: 400% 400%;
+  animation: borderAnimation 6s ease infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+} */
+
+/* @keyframes borderAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+
+/* Input styling */
+/* .auth-input {
+  border-radius: 10px;
+  padding: 10px;
+} */
+
+/* Password toggle icon */
+/* .password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}  */
+
+
+/* ============================================================
+   AUTH PAGE — DARK GLASS STYLE
+============================================================ */
+
+.auth-container {
+  min-height: 100vh;
+  background-color:  #16213E;   /* Same color you requested */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Glass container */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 20px;
+
+  background:#a9c6eb; /* Transparent white */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  color: #1E3A5F;
+  font-weight: bold;
+}
+
+/* Title */
+.auth-card h4,
+.auth-card h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+.auth-input {
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+/* Labels */
+.auth-card label {
+  margin-bottom: 5px;
+}
+
+/* Button */
+.auth-card .btn-theme {
+  border-radius: 30px;
+  background-color: #16213E;
+}
+
+.auth-card .btn-theme:hover {
+  background-color: #0f172a;
+}
+
+/* Footer links */
+.auth-footer a {
+  color: #061a33;
+  text-decoration: underline;
+}
