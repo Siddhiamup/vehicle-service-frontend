@@ -87,9 +87,8 @@ const Notifications = () => {
       {!loading && notifications.map(n => (
         <div
           key={n.notificationId}
-          className={`dashboard-card mb-2 ${
-            n.readStatus ? "" : "border-primary bg-light"
-          }`}
+          className={`dashboard-card mb-2 ${n.readStatus ? "" : "border-primary bg-light"
+            }`}
           style={{ cursor: "pointer" }}
           onClick={() => !n.readStatus && markRead(n.notificationId)}
         >

@@ -111,7 +111,7 @@ const BookingList = () => {
           key={booking.bookingId}
           booking={booking}
           onCancel={handleCancel}
-          onViewInvoice={handleViewInvoice}  
+          onViewInvoice={handleViewInvoice}
         />
       ))}
 

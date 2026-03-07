@@ -4,8 +4,8 @@
 ============================================================ */
 
 body {
-    background-color: #F4F7FC;
-    font-family: 'Segoe UI', sans-serif;
+  background-color: #F4F7FC;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* ============================================================
@@ -13,8 +13,8 @@ body {
 ============================================================ */
 
 .navbar-theme {
-    background-color: #1E3A5F;
-    color: white;
+  background-color: #1E3A5F;
+  color: white;
 }
 
 /* ============================================================
@@ -22,24 +22,24 @@ body {
 ============================================================ */
 
 .sidebar-theme {
-    background-color: #16213E;
-    color: white;
-    min-height: 100vh;
-    width: 240px;
+  background-color: #16213E;
+  color: white;
+  min-height: 100vh;
+  width: 240px;
 }
 
 .sidebar-theme a {
-    color: #cfd8dc;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+  color: #cfd8dc;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .sidebar-theme a:hover {
-    background-color: #4DA8DA;
-    color: white;
+  background-color: #4DA8DA;
+  color: white;
 }
 
 /* ============================================================
@@ -47,10 +47,10 @@ body {
 ============================================================ */
 
 .dashboard-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================================
@@ -58,13 +58,13 @@ body {
 ============================================================ */
 
 .btn-theme {
-    background-color: #FF7A00;
-    color: white;
-    border: none;
+  background-color: #FF7A00;
+  color: white;
+  border: none;
 }
 
 .btn-theme:hover {
-    background-color: #e96d00;
+  background-color: #e96d00;
 }
 
 /* ============================================================
@@ -72,9 +72,9 @@ body {
 ============================================================ */
 
 .page-title {
-    font-weight: bold;
-    color: #1E3A5F;
-    margin-bottom: 20px;
+  font-weight: bold;
+  color: #1E3A5F;
+  margin-bottom: 20px;
 }
 
 /* cards */
@@ -105,7 +105,8 @@ body {
   border-radius: 15px;
   width: 100%;
   max-width: 420px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  /* Softer shadow */
 }
 
 .auth-title {
@@ -113,7 +114,7 @@ body {
   color: rgb(30, 58, 95);
   font-weight: bold;
   margin-bottom: 25px;
-  
+
 }
 
 .auth-input {
@@ -127,94 +128,17 @@ body {
 }
 
 /* ============================================================
-   PREMIUM AUTH UI
-============================================================ */
-
-/* .auth-container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(222, 225, 228, 0.487);
-}
-
-/* Glass Card */
-/* .auth-card {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  padding: 40px;
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-  background: #1E3A5F;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  color: #cfd8dc;
-} */
-
-/* Animated Gradient Border */
-/* .auth-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  border-radius: 16px; */
-  /* background: linear-gradient(
-    270deg,
-    #1E3A5F,
-    #4DA8DA,
-    #FF7A00,
-    #1E3A5F
-  ); */
-  /* background-size: 400% 400%;
-  animation: borderAnimation 6s ease infinite;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-} */
-
-/* @keyframes borderAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-} */
-
-
-/* Input styling */
-/* .auth-input {
-  border-radius: 10px;
-  padding: 10px;
-} */
-
-/* Password toggle icon */
-/* .password-wrapper {
-  position: relative;
-}
-
-.password-toggle {
-  position: absolute;
-  right: 12px;
-  top: 38px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #555;
-}  */
-
-
-/* ============================================================
    AUTH PAGE — DARK GLASS STYLE
 ============================================================ */
 
 .auth-container {
   min-height: 100vh;
-  background-color:  #16213E;   /* Same color you requested */
+  background-color: #16213E;
+  /* Same color you requested */
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 /* Glass container */
@@ -224,7 +148,8 @@ body {
   padding: 40px;
   border-radius: 20px;
 
-  background:#a9c6eb; /* Transparent white */
+  background: #a9c6eb;
+  /* Transparent white */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 

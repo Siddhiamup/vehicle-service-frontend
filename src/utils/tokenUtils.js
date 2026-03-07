@@ -1,26 +1,3 @@
-// // ============================================================
-// // JWT Utility Functions
-// // Used for decoding token & extracting roles
-// // ============================================================
-
-// import { jwtDecode } from "jwt-decode";
-
-// // ============================================================
-// // Get User Role From Token
-// // ============================================================
-
-// export const getUserRole = () => {
-
-//     const token = localStorage.getItem("token");
-
-//     if (!token) return null;
-
-//     const decoded = jwtDecode(token);
-
-//     return decoded.role;
-// };
-
-
 // ============================================================
 // TOKEN UTILITIES
 // ============================================================

@@ -3,7 +3,6 @@
 // Handles Login & Register API calls
 // ============================================================
 
-// import api from "../api/axiosConfig";
 import api from "./api";
 
 // ============================================================

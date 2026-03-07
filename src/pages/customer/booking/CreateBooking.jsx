@@ -29,13 +29,13 @@ const CreateBooking = () => {
 
         }
         catch (error) {
-  const message =
-    error.response?.data?.message ||
-    error.response?.data ||
-    "Booking failed";
+            const message =
+                error.response?.data?.message ||
+                error.response?.data ||
+                "Booking failed";
 
-  alert(message);
-}
+            alert(message);
+        }
 
     };
 
