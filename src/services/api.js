@@ -7,7 +7,7 @@ import axios from "axios";
 
 // Create axios instance
 const api = axios.create({
-  baseURL: "http://localhost:8087",
+  baseURL: "https://vehicle-service-backend-production.up.railway.app",
 });
 
 // ============================================================

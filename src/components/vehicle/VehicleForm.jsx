@@ -89,7 +89,7 @@ const VehicleForm = ({ onSubmit, initialData }) => {
 
             <input
                 type="number"
-                placeholder="number"
+                placeholder="Year"
                 name="year"
                 className="form-control mb-3"
                 value={formData.year}
