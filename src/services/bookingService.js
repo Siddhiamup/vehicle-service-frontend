@@ -2,7 +2,8 @@
 // BOOKING API SERVICE
 // ============================================================
 
-import api from "../api/axiosConfig";
+// import api from "../api/axiosConfig";
+import api from "./api";
 
 // ============================================================
 // CREATE BOOKING
