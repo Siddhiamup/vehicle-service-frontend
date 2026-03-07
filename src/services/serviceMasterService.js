@@ -55,7 +55,7 @@ export const updateService = async (serviceData) => {
   const token = localStorage.getItem("token");
 
   const response = await axios.post(
-    `${API_URL}/add`,
+    `${API_URL}/update/{id}`,
     serviceData,
     {
       headers: { Authorization: `Bearer ${token}` }
