@@ -51,14 +51,17 @@ export const addService = async (serviceData) => {
 // UPDATE SERVICE (REUSE SAME API)
 // ============================================================
 
-export const updateService = async (serviceData) => {
+export const updateService = async (serviceId, serviceData) => {
   const token = localStorage.getItem("token");
 
-  const response = await axios.post(
-    `${API_URL}/edit/{id}`,
+  const response = await axios.put(
+    `${API_URL}/update/${serviceId}`,
     serviceData,
     {
-      headers: { Authorization: `Bearer ${token}` }
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json"
+      }
     }
   );
 
