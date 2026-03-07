@@ -1,16 +1,104 @@
-# React + Vite
+# Vehicle Service Portal — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React + Vite** frontend for the Vehicle Service Management System.
 
-Currently, two official plugins are available:
+This application allows customers to book vehicle services, track bookings, manage vehicles, and receive notifications. Admins and service advisors can manage services and monitor operations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Application
 
-## React Compiler
+Frontend: https://vehicle-service-frontend.vercel.app
+Backend API: https://vehicle-service-backend-production.up.railway.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Vite
+* Axios
+* React Router
+* Bootstrap
+* JWT Authentication
+
+---
+
+## Features
+
+### Customer
+
+* Register and login
+* Add and manage vehicles
+* Book service appointments
+* View booking history
+* Receive notifications
+
+### Admin
+
+* Manage service master
+* Add / update / delete services
+* Monitor bookings
+
+### Service Advisor
+
+* View assigned bookings
+* Update service status
+
+---
+
+## Project Structure
+
+```
+src
+ ├── components
+ ├── pages
+ ├── services
+ │     ├── api.js
+ │     ├── authService.js
+ │     ├── serviceMasterService.js
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file:
+
+```
+VITE_API_BASE_URL=https://vehicle-service-backend-production.up.railway.app
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/Siddhiamup/vehicle-service-frontend
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run development server:
+
+```
+npm run dev
+```
+
+---
+
+## Deployment
+
+Frontend is deployed using **Vercel**.
+
+---
+
+## Author
+
+Siddhi Amup
