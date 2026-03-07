@@ -6,7 +6,7 @@
 import axios from "axios";
 
 // Base API URL
-const API_URL = "https://vehicle-service-backend-production.up.railway.app/services/all";
+const API_URL = "https://vehicle-service-backend-production.up.railway.app/services";
 
 // ============================================================
 // GET ALL SERVICES
