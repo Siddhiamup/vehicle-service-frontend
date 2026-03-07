@@ -27,9 +27,20 @@ const EditService = () => {
   }, []);
 
   const loadService = async () => {
-    const services = await getAllServices();
-    const service = services.find(s => s.serviceId === Number(id));
-    setFormData(service);
+    try {
+      const services = await getAllServices();
+
+      const service = services.find(
+        s => s.serviceId === Number(id)
+      );
+
+      if (service) {
+        setFormData(service);
+      }
+
+    } catch (error) {
+      console.error("Failed to load service", error);
+    }
   };
 
   // ============================================================
@@ -51,11 +62,21 @@ const EditService = () => {
     e.preventDefault();
 
     try {
-      await updateService(formData);
+
+      // Separate ID and data
+      const { serviceId, ...serviceData } = formData;
+
+      await updateService(serviceId, serviceData);
+
       alert("Service updated successfully");
+
       navigate("/services");
-    } catch {
+
+    } catch (error) {
+
+      console.error("Update failed", error);
       alert("Update failed");
+
     }
   };
 
@@ -76,6 +97,7 @@ const EditService = () => {
           className="form-control mb-3"
           value={formData.serviceName}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -84,6 +106,7 @@ const EditService = () => {
           className="form-control mb-3"
           value={formData.durationHours}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -92,6 +115,7 @@ const EditService = () => {
           className="form-control mb-3"
           value={formData.price}
           onChange={handleChange}
+          required
         />
 
         <button className="btn btn-theme">
