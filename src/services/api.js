@@ -33,18 +33,17 @@
 // src/services/api.js
 
 import axios from "axios";
+console.log("API URL:", import.meta.env.VITE_API_BASE_URL);
 
 // ============================================================
 // Create Axios Instance
 // ============================================================
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
-  headers: {
-    "Content-Type": "application/json"
-  }
+  baseURL:
+    import.meta.env.VITE_API_BASE_URL ||
+    "https://vehicle-service-backend-production.up.railway.app"
 });
-
 // ============================================================
 // Automatically Attach JWT Token
 // ============================================================
@@ -60,5 +59,4 @@ api.interceptors.request.use((config) => {
 
   return config;
 });
-
 export default api;
