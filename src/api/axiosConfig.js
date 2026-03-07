@@ -12,7 +12,7 @@ import axios from "axios";
 const api = axios.create({
 
     // Backend base URL
-    baseURL: "https://vehicle-service-backend-production.up.railway.app",
+    baseURL: import.meta.env.VITE_API_BASE_URL,
 
     headers: {
         "Content-Type": "application/json"
